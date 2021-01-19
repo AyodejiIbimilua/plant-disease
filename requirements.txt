@@ -5,3 +5,4 @@ torchvision==0.8.1
 numpy==1.19.5
 torch==1.7.0
 Pillow==8.1.0
+git >= 1.8.2
