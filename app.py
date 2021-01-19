@@ -93,7 +93,7 @@ class DiseaseClassifier(nn.Module):
         x = self.fc2(x)
         return x
 
-@st.cache
+
 def disease_classifier():
     disease_classifier = DiseaseClassifier()
     disease_classifier.load_state_dict(torch.load("model_scratch.pt", map_location=torch.device('cpu')))
