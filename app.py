@@ -174,7 +174,7 @@ def main():
 
     choice = st.sidebar.selectbox('Menu', menu)
     if choice == 'Home':
-        st.text("App created by Ibimilua Ayodeji Oluwatosin")
+        st.success("App created by Ibimilua Ayodeji Oluwatosin")
         st.subheader("Make Predictions")
         uploaded_file = st.file_uploader("To classify a disease, upload an image of the Leaf of the crop", type="jpg")
         if uploaded_file is not None:
