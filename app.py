@@ -168,12 +168,13 @@ def main():
     </h1>
     ''',
     unsafe_allow_html=True)
-    st.text("App created by Ibimilua Ayodeji Oluwatosin")
+    
 
     menu = ["Home", "About Project", "Student Info"]
 
     choice = st.sidebar.selectbox('Menu', menu)
     if choice == 'Home':
+	st.text("App created by Ibimilua Ayodeji Oluwatosin")
         st.subheader("Make Predictions")
 
 
@@ -192,21 +193,20 @@ def main():
         st.subheader("About Project")
         st.write("This project demonstrates how a convolutional neural network can help to identify plant diseases using \
             the image of the leaves. This model is able to identify thirty-eight(38) different classes of diseases ranging from thirteen different types of crops.")
-        st.write("")
         st.write("Currently able to identify from the following 13 range of crops:")
-        st.write("1. Apple")
-        st.write("2. Blueberry")
-        st.write("3. Cherry")
-        st.write("4. Grape")
-        st.write("5. Maize")
-        st.write("6. Orange")
-        st.write("7. Peach")
-        st.write("8. Pepper")
-        st.write("9. Potato")
-        st.write("10. Raspberry")
-        st.write("11. Soybean")
-        st.write("12. Strawberry")
-        st.write("13. Tomato")
+        st.write("1.Apple")
+        st.write("2.Blueberry")
+        st.write("3.Cherry")
+        st.write("4.Grape")
+        st.write("5.Maize")
+        st.write("6.Orange")
+        st.write("7.Peach")
+        st.write("8.Pepper")
+        st.write("9.Potato")
+        st.write("10.Raspberry")
+        st.write("11.Soybean")
+        st.write("12.Strawberry")
+        st.write("13.Tomato")
     if choice == "Student Info":
         st.subheader("Student Info")
         st.write("Naame: Ibimilua Ayodeji Oluwatosin")
