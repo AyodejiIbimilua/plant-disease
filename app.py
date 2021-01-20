@@ -179,7 +179,7 @@ def main():
         uploaded_file = st.file_uploader("To classify a disease, upload an image of the Leaf of the crop", type="jpg")
         if uploaded_file is not None:
             image = PIL.Image.open(uploaded_file)
-            st.image(image, width=600, height=100)
+            st.image(image, width=400, height=100)
             
             ids = run_app(uploaded_file)
             # plot_graph(load_model())
