@@ -186,14 +186,7 @@ def main():
             # plot_graph(load_model())
             for i, j in enumerate(class_names):
                 if ids == i:
-                    # st.subheader("Classification Result: {}".format(j))
-                    st.markdown(
-                    '''
-                    <div style="color:green">
-                        st.subheader {j}
-                    </div>
-                    ''',
-                    unsafe_allow_html=True)
+                    st.subheader("Classification Result: {}".format(j))
 
     if choice == "About Project":
         st.subheader("About Project")
