@@ -18,7 +18,7 @@ from torch.utils.data.sampler import SubsetRandomSampler
 from pathlib import Path
 
 
-PAGE_CONFIG = {"page_title":"Plant Disease Recognition","page_icon":None,"layout":"wide"}
+PAGE_CONFIG = {"page_title":"Plant Disease Recognition","page_icon":None,"layout":"centered"}
 st.set_page_config(**PAGE_CONFIG)
 
 class_names = ['Apple Scab',
